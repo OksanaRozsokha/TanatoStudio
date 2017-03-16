@@ -1,0 +1,5 @@
+src/.sass-cache/
+src/config.rb
+.idea/
+node_modules/
+
