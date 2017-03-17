@@ -1,12 +1,8 @@
-@mixin lato($size, $font-weight) {
-  font: $size 'Lato', sans-serif;
-  font-weight: $font-weight;
+@mixin open-sans-reg($size) {
+  font: $size "open-sans-reg", sans-serif;
 }
-@mixin gotham($size) {
-  font: $size "gotham", sans-serif;
-}
-@mixin open-sans($size) {
-  font: $size "open-sans", sans-serif;
+@mixin open-sans-bold($size) {
+  font: $size "open-sans-bold", sans-serif;
 }
 //before - after
 @mixin pseudo( $content, $display){
@@ -22,7 +18,7 @@
 }
 
 @mixin section-bg($background-url) {
-  background: url($background-url) 50% 0 no-repeat;
+  background: url($background-url) 50% 0 no-repeat fixed;
   background-size: cover;
 }
 

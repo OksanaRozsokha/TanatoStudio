@@ -3,38 +3,39 @@
   border: none;
   outline: none;
   cursor: pointer;
-  @include transition-duration(.3s);
-  @include lato(1.4rem, 400);
-  padding: 1.5rem 2rem;
-  color: $menu-color;
+  transition-duration: .3s;
+  font-size: 1.6rem;
+  padding: 0.9375em 1.25em;
+  color: $primary-color;
   text-transform: uppercase;
-  @include border-radius(2px);
-  @media (min-width: 768px)and(max-width: 991px) {
-    padding: 1.5rem 1.5rem;
-    font-size: 1.3rem;
-  }
+  @include border-radius(1rem);
+  //@media (min-width: 768px)and(max-width: 991px) {
+  //  font-size: 1.3rem;
+  //}
 
   &-bigger {
-    padding: 1.5rem 4.5rem;
+    padding: 0.9375em 2.8125em;
   }
 
-  &-orange {
-    background: $buttons-bg;
-    color: $white;
+  &-brand {
+    background: $brand-color;
     &:hover {
-      background: darken($buttons-bg, 15%);
+      background: rgba(247, 96, 14, .5);
     }
   }
 
   &-border {
     background: transparent;
-    border: 1px solid $border-color;
-    color: $white;
+    border: 1px solid $primary-color;
     &:hover {
-      background: $white;
-      color: $menu-color;
+      background: $brand-color;
+      color: $primary-color;
       border-color: transparent;
     }
+  }
+
+  &-menu {
+    background: transparent;
   }
 }
 

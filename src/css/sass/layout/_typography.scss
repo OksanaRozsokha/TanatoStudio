@@ -1,23 +1,43 @@
 .text {
-  @include open-sans(1.3rem);
-  color: $common-text;
-  line-height: 2.2rem;
+  font-size: 1.4rem;
+  line-height: 1.875em;
+  color: $text-color;
+  text-align: center;
 
-  &-white {
-    color: $white;
-  }
-  &-grey {
-    color: $grey-white;
+  &-prim-color {
+    color: $primary-color;
   }
 
-  &-title {
-    @include lato(1.6rem, 700);
-    color: $main-dark;
-    text-transform: uppercase;
+  &-middle {
+    font-size: 1.6rem;
   }
-  &-big-title {
-    @include gotham(3rem);
-    font-weight: 900;
-    text-transform: uppercase;
+  &-big {
+    font-size: 2.5rem;
+  }
+
+}
+
+
+.title {
+  @include open-sans-bold(2.5rem);
+  color: $text-color;
+  text-transform: uppercase;
+  text-align: center;
+
+  &-small {
+    font-size: 1.6rem;
+  }
+
+  &-middle {
+    font-size: 3.5rem;
+  }
+  &-big {
+    font-size: 7rem;
+  }
+  &-prim-color {
+    color: $primary-color;
+  }
+  &-brand-color {
+    color: $brand-color;
   }
 }

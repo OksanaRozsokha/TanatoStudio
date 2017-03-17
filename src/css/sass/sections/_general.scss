@@ -1,20 +1,12 @@
 html {
-  font-size: 0.625rem;
+  @include open-sans-reg(0.625rem);
 }
 a {
   text-decoration: none;
   outline: none;
-  @include transition-duration(.1s);
+  transition-duration: .3s;
 }
-.mt-7 {
-  margin-top: 5rem;
-}
-.error {
-  border: 2px solid red;
-}
-.success {
-  border: 2px solid green;
-}
+
 .active {
   overflow: hidden;
 
@@ -39,4 +31,9 @@ a {
 
 .owl-carousel .owl-dots .owl-dot:last-child {
   margin-right: 0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
 }

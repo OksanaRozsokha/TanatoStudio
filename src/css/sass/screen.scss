@@ -1,11 +1,5 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-
-
-@import "compass/reset";
-@import "compass/css3";
+@import "../../../node_modules/normalize.scss/normalize.scss";
+//@import "../../../node_modules/font-awesome/scss/font-awesome.scss";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 @import "../../../node_modules/bootstrap/scss/bootstrap-grid";
 @import "../../../node_modules/bootstrap/scss/bootstrap-reboot";
@@ -19,13 +13,13 @@
 @import "layout/buttons";
 @import "layout/menu";
 @import "layout/content-head";
-@import "layout/_form";
+@import "layout/form";
 @import "layout/header";
 @import "sections/intro";
 @import "sections/our-services";
-@import "sections/about-us";
-@import "sections/price-table";
-@import "sections/how-works";
-@import "sections/our-clients";
-@import "sections/subscription";
+@import "sections/subscribe-us";
+@import "sections/our-works";
+@import "sections/clients-comments";
+@import "sections/our-team";
+@import "sections/hire-us";
 @import "layout/footer";

@@ -1,24 +1,10 @@
 .main-header {
   padding: 2.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h1 {
+  text-indent: -9999px;
 }
 
-.flex-header {
-  @include display-flex;
-  @include justify-content(space-between);
-  @include align-items(center);
-  @media (min-width: 768px)and(max-width: 991px) {
-    @include flex-direction(column);
-  }
-}
-.logo {
-  @media (min-width: 768px)and(max-width: 991px) {
-    margin-bottom: 2rem;
-  }
-}
-.menu {
-  background: transparent;
-  outline: none;
-  .fa-bars {
-    font-size: 2rem;
-  }
-}
