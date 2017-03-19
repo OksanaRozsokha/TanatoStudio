@@ -2,6 +2,10 @@
   position: relative;
   min-height: 100vh;
   @include section-bg("../../img/welcom-bg.png");
+  @media (max-height: 524px) {
+    height: auto;
+    padding-bottom: 5rem;
+  }
 }
 .intro-slogan {
   max-width: 77.5rem;

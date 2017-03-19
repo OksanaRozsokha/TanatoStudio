@@ -86,7 +86,10 @@ gulp.task('minify:img', function () {
 
 gulp.task('fonts', function () {
     return gulp.src(config.fonts.src)
-        .pipe(gulp.dest(config.fonts.dest));
+        .pipe(gulp.dest(config.fonts.dest))
+        .pipe(browserSync.reload({
+        stream: true
+    }))
 });
 
 gulp.task('js', function () {

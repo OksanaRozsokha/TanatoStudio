@@ -1,0 +1,39 @@
+.clients-comments {
+  padding: 10rem 0;
+  @include section-bg("../../img/comments-bg.png");
+  p {
+    max-width: 82rem;
+  }
+}
+//sliders styles
+.owl-carousel {
+  .slider-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      display: block;
+      width: auto;
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  background: $brand-color;
+}
+.owl-theme .owl-dots .owl-dot.active span {
+  background: $slider-dots-color;
+}
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: $slider-dots-color;
+}
+//
+
+blockquote {
+  text-align: center;
+}
+.author {
+  font-size: 1.8rem;
+  color: $primary-color;
+}

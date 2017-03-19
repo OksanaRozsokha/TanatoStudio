@@ -1,0 +1,73 @@
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 772px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hire-us & {
+    display: block;
+  }
+
+}
+.input {
+
+  font-size: 1.6rem;
+  padding: 1.25em;
+  color: $secondary-color;
+  border: none;
+  border-radius: 1rem;
+  outline: none;
+  //@media (max-width: 772px) {
+  //  width: 95%;
+  //}
+  .inputs-list & {
+    width: 100%;
+  }
+
+  &-bigger {
+    width: 60%;
+    @media (max-width: 767px) {
+     width: 100%;
+    }
+  }
+
+  .subscribe-us & {
+    margin-right: 5%;
+    @media (max-width: 772px) {
+      margin: 0 0 3rem 0;
+    }
+  }
+}
+.inputs-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+  li {
+    width: 48%;
+    @media (max-width: 767px) {
+      width: 100%;
+      margin-bottom: 3rem;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.textarea {
+  width: 100%;
+  margin-bottom: 4%;
+  font-size: 1.6rem;
+  padding: 1.25em;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  resize: none;
+}

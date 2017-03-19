@@ -1,0 +1,43 @@
+.hire-us {
+  padding: 10rem 0;
+  @include section-bg("../../img/form-bg.png");
+  overflow: hidden;
+  @media (max-width: 465px) {
+    padding-bottom: 2rem;
+  }
+  .btn {
+    float: left;
+    @media (max-width: 465px) {
+      float: none;
+      margin-bottom: 6rem;
+    }
+  }
+  .social-links {
+    float: right;
+    margin: 0;
+    @media (max-width: 465px) {
+      width: 100%;
+      justify-content: center;
+      float: none;
+    }
+    a {
+      width: 4.5rem;
+      height: 4.5rem;
+    }
+  }
+}
+.facebook-max {
+  @include small-bg("../../img/facebook-logo.png");
+}
+.twitter-max {
+   @include small-bg("../../img/twitter-logo.png");
+}
+.google-plus-max {
+  @include small-bg("../../img/google-logo.png");
+}
+.dribble-max {
+  @include small-bg("../../img/dribbble-logo.png");
+}
+.behance-max {
+  @include small-bg("../../img/behance-logo.png");
+}

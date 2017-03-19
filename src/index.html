@@ -5,71 +5,326 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>TanatoSudio</title>
-    <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css" type="text/css"/>
     <link href="css/css/screen.min.css" media="screen, projection" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-<section class="intro">
-    <div class="container">
-        <header class="main-header">
-            <a class="logo" href="">
-                <img class="img-fluid" src="img/Logo.png" alt="">
-                <h1>Tanato Studio</h1>
-            </a>
-            <nav class="main-nav">
-                <button class="btn btn-menu"><i class="fa fa-bars" aria-hidden="true"></i></button>
-            </nav>
-        </header>
-        <div class="intro-slogan">
-            <h2 class="title title-big title-prim-color">We design <span class="title-brand-color">things</span></h2>
-            <p class="text text-big text-prim-color">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-            </p>
-            <ul class="btn-list">
-                <li>
-                    <button class="btn btn-border btn-bigger">Hire us</button>
-                </li>
-                <li>
-                    <button class="btn btn-border">Our works</button>
-                </li>
-            </ul>
+<div class="wrapper">
+    <div class="content">
+        <section class="intro">
+            <div class="container">
+                <header class="main-header">
+                    <a class="logo" href="">
+                        <img class="img-fluid" src="img/Logo.png" alt="">
+                        <h1>Tanato Studio</h1>
+                    </a>
+                    <nav class="main-nav">
+                        <button class="btn btn-menu">menu</button>
+                    </nav>
+                </header>
+                <div class="intro-slogan">
+                    <h2 class="title title-big title-prim-color">We design <span class="title-brand-color">things</span></h2>
+                    <p class="text text-big text-prim-color">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                    </p>
+                    <ul class="btn-list">
+                        <li>
+                            <button class="btn btn-border btn-bigger scroll" data-scrollTo="hire-us">Hire us</button>
+                        </li>
+                        <li>
+                            <button class="btn btn-border scroll" data-scrollTo="our-works">Our works</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="scroll scroll-item" data-scrollTo="our-services">scroll</button>
+        </section>
+        <section class="our-services">
+            <div class="container">
+                <ul class="services-list row">
+                    <li class="print-design col-sm-12 col-md-6 col-lg-3">
+                        <h3 class="title title-small">Print Design</h3>
+                        <p class="text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                    </li>
+                    <li class="web-design col-sm-12 col-md-6 col-lg-3">
+                        <h3 class="title title-small">Web Design</h3>
+                        <p class="text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                    </li>
+                    <li class="app-design col-sm-12 col-md-6 col-lg-3">
+                        <h3 class="title title-small">App Design</h3>
+                        <p class="text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                    </li>
+                    <li class="logo-design col-sm-12 col-md-6 col-lg-3">
+                        <h3 class="title title-small">Logo Design</h3>
+                        <p class="text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="subscribe-us">
+            <div class="container">
+                <form class="form" action="#">
+                    <input class="input input-bigger" type="email" maxlength="60"
+                           placeholder="Enter Your email adress for newsletter" autocomplete="on">
+                    <button class="btn btn-bigger btn-brand">Subscribe</button>
+                </form>
+            </div>
+        </section>
+        <section class="our-works">
+            <div class="container">
+                <header class="head">
+                    <h2 class="title title-middle">Our<span class="title-brand-color"> works</span></h2>
+                    <p class="text">
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat
+                    </p>
+                </header>
+                <ul class="portfolio-lift row">
+                    <li class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="img-wrap">
+                            <img src="img/first-service.png" alt="">
+                            <div class="hover-block">
+                                <div class="flex-wrap">
+                                    <h3 class="title title-prim-color">Abazoo website</h3>
+                                    <p class="text text-prim-color">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo</p>
+                                    <a class="btn btn-prim-border">Show project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="img-wrap">
+                            <img src="img/second-service.png" alt="">
+                            <div class="hover-block">
+                                <div class="flex-wrap">
+                                    <h3 class="title title-prim-color">Abazoo website</h3>
+                                    <p class="text text-prim-color">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo</p>
+                                    <a class="btn btn-prim-border">Show project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="img-wrap">
+                            <img src="img/third-service.png" alt="">
+                            <div class="hover-block">
+                                <div class="flex-wrap">
+                                    <h3 class="title title-prim-color">Abazoo website</h3>
+                                    <p class="text text-prim-color">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo</p>
+                                    <a class="btn btn-prim-border">Show project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="img-wrap">
+                            <img src="img/fourth-service.png" alt="">
+                            <div class="hover-block">
+                                <div class="flex-wrap">
+                                    <h3 class="title title-prim-color">Abazoo website</h3>
+                                    <p class="text text-prim-color">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo</p>
+                                    <a class="btn btn-prim-border">Show project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="img-wrap">
+                            <img src="img/fifth-service.png" alt="">
+                            <div class="hover-block">
+                                <div class="flex-wrap">
+                                    <h3 class="title title-prim-color">Abazoo website</h3>
+                                    <p class="text text-prim-color">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo</p>
+                                    <a class="btn btn-prim-border">Show project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="img-wrap">
+                            <img src="img/sixth-service.png" alt="">
+                            <div class="hover-block">
+                                <div class="flex-wrap">
+                                    <h3 class="title title-prim-color">Abazoo website</h3>
+                                    <p class="text text-prim-color">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo</p>
+                                    <a class="btn btn-prim-border">Show project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <button class="btn btn-bigger btn-sec-border btn-center">Show more</button>
+            </div>
+        </section>
+        <section class="clients-comments">
+            <div class="container">
+                <div class="owl-carousel owl-theme">
+                    <div class="slider-item">
+                        <img src="img/commentator.png" alt="">
+                        <blockquote>
+                            <p class="text text-big text-prim-color text-italic">These guys are incredible! I get my project in 10 days and it was awesome!
+                                Very good service! Highly recommended!</p>
+                            <cite><span class="author">John Smith</span></cite>
+                        </blockquote>
+                    </div>
+                    <div class="slider-item">
+                        <img  src="img/commentator.png" alt="">
+                        <blockquote>
+                            <p class="text text-big text-prim-color text-italic">These guys are incredible! I get my project in 10 days and it was awesome!
+                                Very good service! Highly recommended!</p>
+                            <cite><span class="author">John Smith</span></cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="our-team">
+            <div class="container">
+                <header class="head">
+                    <h2 class="title title-middle">Our<span class="title-brand-color"> team</span></h2>
+                    <p class="text">
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat
+                    </p>
+                </header>
+                <ul class="team-list row">
+                    <li class="col-sm-12 col-md-6 col-lg-3">
+                        <a class="image-wrap" href="#">
+                            <img src="img/first-team-worker.png" alt="">
+                            <span class="hover-line">line</span>
+                        </a>
+                        <h3 class="title">Catherina Gail</h3>
+                        <ul class="social-links">
+                            <li>
+                                <a class="facebook" href="#">facebook</a>
+                            </li>
+                            <li>
+                                <a class="twitter" href="#">twitter</a>
+                            </li>
+                            <li>
+                                <a class="google-plus" href="#">google-plus</a>
+                            </li>
+                        </ul>
+                        <p class="text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                    </li>
+                    <li class="col-sm-12 col-md-6 col-lg-3">
+                        <a class="image-wrap" href="#">
+                            <img class="big-photo" src="img/second-team-worker.png" alt="">
+                            <span class="hover-line">line</span>
+                        </a>
+                        <h3 class="title">Harvey Rube</h3>
+                        <ul class="social-links">
+                            <li>
+                                <a class="facebook" href="#">facebook</a>
+                            </li>
+                            <li>
+                                <a class="twitter" href="#">twitter</a>
+                            </li>
+                            <li>
+                                <a class="google-plus" href="#">google-plus</a>
+                            </li>
+                        </ul>
+                        <p class="text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</p>
+                    </li>
+                    <li class="col-sm-12 col-md-6 col-lg-3">
+                        <a class="image-wrap" href="#">
+                            <img src="img/third-team-worker.png" alt="">
+                            <span class="hover-line">line</span>
+                        </a>
+                        <h3 class="title">Karen Li</h3>
+                        <ul class="social-links">
+                            <li>
+                                <a class="facebook" href="#">facebook</a>
+                            </li>
+                            <li>
+                                <a class="twitter" href="#">twitter</a>
+                            </li>
+                            <li>
+                                <a class="google-plus" href="#">google-plus</a>
+                            </li>
+                        </ul>
+                        <p class="text">Commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dol</p>
+                    </li>
+                    <li class="col-sm-12 col-md-6 col-lg-3">
+                        <a class="image-wrap" href="#">
+                            <img src="img/fourth-team-worker.png" alt="">
+                            <span class="hover hover-line">line</span>
+                        </a>
+                        <h3 class="title">Kevin Ward</h3>
+                        <ul class="social-links">
+                            <li>
+                                <a class="facebook" href="#">facebook</a>
+                            </li>
+                            <li>
+                                <a class="twitter" href="#">twitter</a>
+                            </li>
+                            <li>
+                                <a class="google-plus" href="#">google-plus</a>
+                            </li>
+                        </ul>
+                        <p class="text">Velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="hire-us">
+            <div class="container">
+                <header class="head">
+                    <h2 class="title title-prim-color title-middle">Say<span class="title-brand-color"> hello</span></h2>
+                    <p class="text text-prim-color">
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat
+                    </p>
+                </header>
+                <form class="form" action="#">
+                    <ul class="inputs-list">
+                        <li>
+                            <input class="input" type="email" maxlength="60"
+                                   placeholder="Your email" autocomplete="on">
+                        </li>
+                        <li>
+                            <input class="input" type="text" maxlength="60"
+                                   placeholder="Subject" autocomplete="on">
+                        </li>
+                    </ul>
+                    <textarea class="textarea" rows="15"  placeholder="Your Message"></textarea>
+                    <button class="btn btn-brand btn-bigger">Hire us</button>
+                </form>
+                <ul class="social-links">
+                    <li>
+                        <a class="facebook-max" href="#">facebook</a>
+                    </li>
+                    <li>
+                        <a class="twitter-max" href="#">twitter</a>
+                    </li>
+                    <li>
+                        <a class="google-plus-max" href="#">google-plus</a>
+                    </li>
+                    <li>
+                        <a class="dribble-max" href="#">dribbl</a>
+                    </li>
+                    <li>
+                        <a class="behance-max" href="#">behance</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <footer class="main-footer">
+        <div class="container">
+            <p>© 2015 Copyright design studio</p>
+            <p>Designed by <a href="#">symu.co</a></p>
         </div>
-    </div>
-    <button class="scroll-item">scroll</button>
-</section>
-<section class="our-services">
-    <div class="container">
-        <ul class="services-list row">
-            <li class="print-design col-sm-12 col-md-6 col-lg-3">
-                <h3 class="title title-small">Print Design</h3>
-                <p class="text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-            </li>
-            <li class="web-design col-sm-12 col-md-6 col-lg-3">
-                <h3 class="title title-small">Web Design</h3>
-                <p class="text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-            </li>
-            <li class="app-design col-sm-12 col-md-6 col-lg-3">
-                <h3 class="title title-small">App Design</h3>
-                <p class="text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-            </li>
-            <li class="logo-design col-sm-12 col-md-6 col-lg-3">
-                <h3 class="title title-small">Logo Design</h3>
-                <p class="text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-            </li>
-        </ul>
-    </div>
-</section>
-<section class="subscribe-us">
-    <div class="container">
-        <form class="form" action="#">
-            <input class="input input-bigger" type="email" maxlength="60" placeholder="Enter Your email adress for newsletter" autocomplete="on">
-            <button class="btn btn-bigger btn-brand">Subscribe</button>
-        </form>
-    </div>
-</section>
+    </footer>
+</div>
 
 <script src="js/all.min.js"></script>
-
 </body>
 </html>

@@ -1,0 +1,80 @@
+.our-team {
+  padding: 10rem 0 7.5rem;
+  background: $primary-color;
+}
+.team-list {
+  & > li {
+    margin-bottom: 5rem;
+    &:hover  {
+      .image-wrap {
+        transform: scale(1.1);
+        transform-origin: bottom;
+        transition-duration: .3s;
+        @media (max-width: 767px) {
+          transform: scale(1);
+        }
+      }
+      .hover-line {
+        display: block;
+      }
+      img {
+        filter: grayscale(0);
+      }
+    }
+    .image-wrap {
+      display: block;
+      position: relative;
+      width: 90%;
+      margin: 0 auto 3rem;
+
+    }
+  }
+  img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    filter: grayscale(100%);
+  }
+}
+
+.social-links {
+  margin: 2.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  li {
+    margin-right: 1rem;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  a {
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+   text-indent: -9999px;
+  }
+}
+.facebook {
+  @include small-bg("../../img/facebook-logo-mini.png");
+}
+.twitter {
+  @include small-bg("../../img/twitter-logo-mini.png");
+}
+.google-plus {
+  @include small-bg("../../img/google-logo-mini.png");
+}
+.hover-line {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1rem;
+  background: $brand-color;
+  text-indent: -9999px;
+  transition-duration: .3s;
+}
+.hover {
+  transition-duration: .3s;
+}

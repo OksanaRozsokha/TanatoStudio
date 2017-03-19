@@ -5,22 +5,25 @@
   cursor: pointer;
   transition-duration: .3s;
   font-size: 1.6rem;
-  padding: 0.9375em 1.25em;
+  //padding: 0.9375em 1.25em;
+  padding: 0.9375em 2.1875em;
   color: $primary-color;
   text-transform: uppercase;
   @include border-radius(1rem);
-  //@media (min-width: 768px)and(max-width: 991px) {
-  //  font-size: 1.3rem;
-  //}
-
+  @media (max-width: 772px) {
+    font-size: 1.4rem;
+  }
+  @media (max-width: 350px) {
+    font-size: 1.2rem;
+  }
   &-bigger {
-    padding: 0.9375em 2.8125em;
+    padding: 0.9375em 3.4375em;
   }
 
   &-brand {
     background: $brand-color;
     &:hover {
-      background: rgba(247, 96, 14, .5);
+      background: $brand-hover-color
     }
   }
 
@@ -33,9 +36,39 @@
       border-color: transparent;
     }
   }
+  &-prim-border {
+    background: transparent;
+    border: 1px solid $primary-color;
+    &:hover {
+      background: $primary-color;
+      color: $brand-color;
+    }
+  }
+  &-sec-border {
+    background: transparent;
+    border: 1px solid $secondary-color;
+    color: $secondary-color;
+    &:hover {
+      background: $brand-color;
+      color: $primary-color;
+      border-color: transparent;
+    }
+  }
+
+  &-center {
+    display: block;
+    margin: 0 auto;
+  }
+
 
   &-menu {
-    background: transparent;
+    width: 2.6rem;
+    height: 2rem;
+    @include small-bg("../../img/Menu.png");
+    background-color: transparent;
+    border-radius: 0;
+    text-indent: -9999px;
+    padding: 0;
   }
 }
 
